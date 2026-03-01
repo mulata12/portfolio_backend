@@ -1,18 +1,65 @@
-# Portfolio Backend API
 
-Built with:
+
+# 🚀 Portfolio Backend API
+
+A production-ready RESTful backend API powering my personal portfolio website.
+
+Built with NestJS, PostgreSQL, and JWT authentication.
+
+---
+
+## 🛠 Tech Stack
+
 - NestJS
+- TypeScript
 - PostgreSQL
 - TypeORM
 - JWT Authentication
+- REST API Architecture
 
-Features:
-- Admin authentication
-- Projects management
-- Skills management
-- Certificates
-- Contact form
-- Testimonials moderation
+---
+
+## 📦 Features
+
+- 🔐 Admin authentication (JWT-based)
+- 📁 Project management (CRUD)
+- 💬 Testimonials management
+- 📩 Contact form message storage
+- 🗄 PostgreSQL relational database
+- 🌐 CORS enabled for frontend integration
+
+---
+
+## 📂 API Endpoints
+
+### Public Routes
+
+- `GET /api/projects`
+- `GET /api/testimonials`
+- `POST /api/contact`
+
+### Admin Routes (Protected)
+
+- `POST /api/auth/login`
+- `POST /api/projects`
+- `PATCH /api/projects/:id`
+- `DELETE /api/projects/:id`
+
+---
+
+## 🏗 Architecture
+
+- Modular NestJS structure
+- DTO validation
+- Entity-based database design
+- Separation of concerns (Controller → Service → Repository)
+
+---
+
+## ⚙️ Environment Setup
+
+Create a `.env` file:
+
 
 ## Description
 
@@ -49,6 +96,15 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+Server runs at:
+http://localhost:3100
+
+🌍 Connected Frontend
+
+Frontend repository:
+👉 https://github.com/mulata12/portfolio-frontend
+
 
 ## Deployment
 
