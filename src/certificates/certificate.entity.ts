@@ -8,7 +8,7 @@ import {
 @Entity('certificates')
 export class Certificate {
   @PrimaryGeneratedColumn()
-  id!: number;
+  id: number;
 
   @Column()
   title!: string;
@@ -19,6 +19,10 @@ export class Certificate {
   @Column({ nullable: true })
   link?: string;
 
+  // image for displaying certificate
+  @Column({ nullable: true })
+  file?: string;
+
   @CreateDateColumn()
-  createdAt!: Date;
+  createdAt: Date;
 }
